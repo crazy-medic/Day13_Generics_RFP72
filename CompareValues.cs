@@ -6,7 +6,7 @@ namespace LargestNumber
 {
     class CompareValues
     {
-        public int LargestNum(int a, int b, int c)
+        public double LargestNum(double a, double b, double c)
         {
             if(a.CompareTo(b) > 0 && a.CompareTo(c) > 0)
             {
