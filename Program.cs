@@ -7,14 +7,14 @@ namespace LargestNumber
         
         public static void Main(string[] args)
         {
-            double First, Second, Third;
+            string First, Second, Third;
             Console.WriteLine("Largest number of given numbers!");
             GetInput get = new GetInput();
-            First = get.GetDouble();
-            Second = get.GetDouble();
-            Third = get.GetDouble();
+            First = get.GetString();
+            Second = get.GetString();
+            Third = get.GetString();
             CompareValues LN = new CompareValues();
-            double largest = LN.LargestNum(First, Second, Third);
+            string largest = LN.LargestNum(First, Second, Third);
             Console.WriteLine("Largest number of {0} {1} and {2} is : {3}", First, Second, Third, largest);
         }
     }

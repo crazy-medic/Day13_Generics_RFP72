@@ -7,10 +7,10 @@ namespace LargestNumber
     class GetInput
     {
         
-        public double GetDouble()
+        public string GetString()
         {
             Console.WriteLine("Enter any value:");
-            return(Convert.ToDouble(Console.ReadLine()));
+            return(Console.ReadLine());
         }
     }
 }
