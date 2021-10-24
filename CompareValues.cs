@@ -6,33 +6,30 @@ namespace LargestNumber
 {
     public class CompareValues<T> where T : IComparable
     {
-        public T first, second, third;
-        public CompareValues(T first, T second, T third)
+        public T[] value;
+        public CompareValues(T[] value)
         {
-            this.first = first;
-            this.second = second;
-            this.third = third;
+            this.value = value;
         }
-        public static T MaxValue(T first, T second, T third)
+        public T[] Sorting(T[] values)
         {
-            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
-            {
-                return first;
-            }
-            if (second.CompareTo(first) > 0 && second.CompareTo(third) > 0)
-            {
-                return second;
-            }
-            if (third.CompareTo(first) > 0 && third.CompareTo(second) > 0)
-            {
-                return third;
-            }
-            return default;
+            Array.Sort(values);
+            return values;
+        }
+        public T MaxValue(params T[] values)
+        {
+            var SortedArray = Sorting(values);
+            return SortedArray[^1];
         }
         public T MaxMethod()
         {
-            T max = CompareValues<T>.MaxValue(this.first, this.second, this.third);
+            var max = MaxValue(this.value);
             return max;
+        }
+        public void PrintingMaximumValue()
+        {
+            var maximum = MaxValue(this.value);
+            Console.WriteLine("The max of the values is : " + maximum);
         }
     }
 }
