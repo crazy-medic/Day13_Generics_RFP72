@@ -1,0 +1,14 @@
+C:\Users\vinee\source\repos\LargestNumber\bin\Debug\netcoreapp3.1\LargestNumber.exe
+C:\Users\vinee\source\repos\LargestNumber\bin\Debug\netcoreapp3.1\LargestNumber.deps.json
+C:\Users\vinee\source\repos\LargestNumber\bin\Debug\netcoreapp3.1\LargestNumber.runtimeconfig.json
+C:\Users\vinee\source\repos\LargestNumber\bin\Debug\netcoreapp3.1\LargestNumber.runtimeconfig.dev.json
+C:\Users\vinee\source\repos\LargestNumber\bin\Debug\netcoreapp3.1\LargestNumber.dll
+C:\Users\vinee\source\repos\LargestNumber\bin\Debug\netcoreapp3.1\LargestNumber.pdb
+C:\Users\vinee\source\repos\LargestNumber\obj\Debug\netcoreapp3.1\LargestNumber.csproj.AssemblyReference.cache
+C:\Users\vinee\source\repos\LargestNumber\obj\Debug\netcoreapp3.1\LargestNumber.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vinee\source\repos\LargestNumber\obj\Debug\netcoreapp3.1\LargestNumber.AssemblyInfoInputs.cache
+C:\Users\vinee\source\repos\LargestNumber\obj\Debug\netcoreapp3.1\LargestNumber.AssemblyInfo.cs
+C:\Users\vinee\source\repos\LargestNumber\obj\Debug\netcoreapp3.1\LargestNumber.csproj.CoreCompileInputs.cache
+C:\Users\vinee\source\repos\LargestNumber\obj\Debug\netcoreapp3.1\LargestNumber.dll
+C:\Users\vinee\source\repos\LargestNumber\obj\Debug\netcoreapp3.1\LargestNumber.pdb
+C:\Users\vinee\source\repos\LargestNumber\obj\Debug\netcoreapp3.1\LargestNumber.genruntimeconfig.cache
