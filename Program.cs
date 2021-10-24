@@ -4,18 +4,20 @@ namespace LargestNumber
 {
     class Program
     {
-        
+        public int a;
+        public double b;
+        public string c;
         public static void Main(string[] args)
         {
-            string First, Second, Third;
-            Console.WriteLine("Largest number of given numbers!");
-            GetInput get = new GetInput();
-            First = get.GetString();
-            Second = get.GetString();
-            Third = get.GetString();
-            CompareValues LN = new CompareValues();
-            string largest = LN.LargestNum(First, Second, Third);
-            Console.WriteLine("Largest number of {0} {1} and {2} is : {3}", First, Second, Third, largest);
+            CompareValues<int> obj1 = new CompareValues<int>(10, 20, 30);
+            CompareValues<double> obj2 = new CompareValues<double>(12.3, 23.4, 34.50);
+            CompareValues<string> obj3 = new CompareValues<string>("abc", "bca", "cba");
+            int a = obj1.MaxMethod();
+            Console.WriteLine(a);
+            double b = obj2.MaxMethod();
+            Console.WriteLine(b);
+            string c = obj3.MaxMethod();
+            Console.WriteLine(c);
         }
     }
 }

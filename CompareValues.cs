@@ -4,23 +4,35 @@ using System.Text;
 
 namespace LargestNumber
 {
-    class CompareValues
+    public class CompareValues<T> where T : IComparable
     {
-        public string LargestNum(string a, string b, string c)
+        public T first, second, third;
+        public CompareValues(T first, T second, T third)
         {
-            if(a.CompareTo(b) > 0 && a.CompareTo(c) > 0)
+            this.first = first;
+            this.second = second;
+            this.third = third;
+        }
+        public static T MaxValue(T first, T second, T third)
+        {
+            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
             {
-                return a;
+                return first;
             }
-            if(b.CompareTo(a)>0 && b.CompareTo(c) > 0)
+            if (second.CompareTo(first) > 0 && second.CompareTo(third) > 0)
             {
-                return b;
+                return second;
             }
-            if (c.CompareTo(a) > 0 && c.CompareTo(b) > 0)
+            if (third.CompareTo(first) > 0 && third.CompareTo(second) > 0)
             {
-                return c;
+                return third;
             }
-            return a;
+            return default;
+        }
+        public T MaxMethod()
+        {
+            T max = CompareValues<T>.MaxValue(this.first, this.second, this.third);
+            return max;
         }
     }
 }
